@@ -72,10 +72,10 @@ header nav {
 	padding: 20px 0;
 	width: 100%;
 }
-header nav ul {
+/*header nav ul {
 	margin: 0;
 	padding: 0;
-}
+}*/
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -123,7 +123,6 @@ header nav ul li a{
 	font-size: 1rem;
 	line-height: 1.563rem;
 }
-
 .section-one,
 .section-two,
 .section-three {
@@ -185,4 +184,43 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875rem;
+}
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+	.bottom-section {
+		border-top: 1px solid #eee;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	.section-one,
+	.section-two,
+	.section-three {
+		flex-basis: 30%;
+		border-top: none
+	}
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	}
+ 
+@media all and (min-width:1200px) {
+    /* Desktop styles here */
+	header {
+		justify-content: space-between;
+	}
+	header h1 {
+		width: 30%;
+		padding: 0px;
+    	text-align: left;
+		border-bottom: none;
+  	}
+	header nav {
+		width: 40%; 
+	}
+	header nav ul {
+		display: flex; 
+		justify-content: space-between;
+	}
 }
